@@ -14,12 +14,22 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2017",
+    "target": "es2018",
     "module": "es2020",
     "lib": [
-      "es2018",
+      "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+     "http":["./node_modules/stream-http"],
+     "https":[ "./node_modules/https-browserify"],
+    },
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
